@@ -1,308 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suja D R | Data Analyst Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-body{
-    background:#0f172a;
-    color:#e5e7eb;
-    line-height:1.6;
-}
-
-/* NAVBAR */
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(15,23,42,0.9);
-    backdrop-filter:blur(10px);
-    padding:15px 40px;
-    display:flex;
-    justify-content:space-between;
-    z-index:1000;
-}
-nav a{
-    color:#22c55e;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:500;
-}
-nav a:hover{color:#86efac;}
-
-/* HERO */
-header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:linear-gradient(135deg,#22c55e,#0f172a);
-}
-header h1{
-    font-size:3.2rem;
-    font-weight:700;
-}
-header h2{
-    font-size:1.4rem;
-    margin:10px 0;
-}
-header p{
-    margin:10px 0;
-}
-header a{
-    color:#fff;
-}
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#22c55e;
-    color:#0f172a;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-}
-.btn:hover{background:#16a34a;}
-
-/* SECTIONS */
-section{
-    padding:80px 8%;
-}
-section h2{
-    font-size:2rem;
-    color:#22c55e;
-    margin-bottom:30px;
-}
-
-/* ABOUT */
-.about-box{
-    background:rgba(255,255,255,0.05);
-    padding:30px;
-    border-radius:15px;
-}
-
-/* SKILLS */
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-.skill{
-    padding:10px 18px;
-    background:#1e293b;
-    border-radius:25px;
-    font-size:14px;
-    border:1px solid #22c55e;
-}
-
-/* PROJECTS */
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-.project{
-    background:rgba(255,255,255,0.06);
-    border-radius:15px;
-    overflow:hidden;
-    transition:0.3s;
-}
-.project:hover{transform:translateY(-8px);}
-.project img{
-    width:100%;
-    height:160px;
-    object-fit:cover;
-}
-.project div{
-    padding:15px;
-}
-.project h3{color:#22c55e;}
-
-/* EXPERIENCE */
-.timeline{
-    border-left:3px solid #22c55e;
-    padding-left:30px;
-}
-.timeline-item{
-    margin-bottom:30px;
-}
-.timeline-item h3{
-    color:#22c55e;
-}
-
-/* EDUCATION CARD */
-.edu-card{
-    max-width:300px;
-    background:rgba(255,255,255,0.06);
-    padding:20px;
-    border-radius:15px;
-}
-
-/* CONTACT */
-.contact a{
-    color:#22c55e;
-    text-decoration:none;
-}
-.contact a:hover{text-decoration:underline;}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#020617;
-    margin-top:40px;
-}
-
-/* SCROLL ANIMATION */
-.reveal{
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-}
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-    <strong>Suja D R</strong>
-    <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<header>
-    <div>
-        <h1>Suja D R</h1>
-        <h2>Data Analyst | Data Science Enthusiast</h2>
-        <p>Email: <a href="mailto:sujaravichandran006@gmail.com">sujaravichandran006@gmail.com</a></p>
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
-</header>
-
-<section id="about" class="reveal">
-    <h2>About Me</h2>
-    <div class="about-box">
-        <p>
-            I am a BCA student at Saveetha University (CGPA 9.29), passionate about
-            transforming data into actionable insights using machine learning,
-            visualization, and predictive analytics. I aim to build impactful
-            data-driven solutions.
-        </p>
-    </div>
-</section>
-
-<section id="skills" class="reveal">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Power BI</span>
-        <span class="skill">Tableau</span>
-        <span class="skill">Machine Learning</span>
-        <span class="skill">CNN / RNN / LSTM</span>
-        <span class="skill">Pandas</span>
-        <span class="skill">NumPy</span>
-        <span class="skill">Streamlit</span>
-        <span class="skill">Flask</span>
-        <span class="skill">GitHub</span>
-    </div>
-</section>
-
 <section id="projects" class="reveal">
     <h2>Projects</h2>
     <div class="projects">
+
+        <!-- HealthLens AI -->
+        <div class="project">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*9G4mWZ9uZyY5Z0s5aXoaZQ.png">
+            <div>
+                <h3>HealthLens AI – Disease Prediction</h3>
+                <p>
+                    AI-driven healthcare system that predicts possible diseases
+                    based on user symptoms using machine learning.
+                    Includes data preprocessing, model training,
+                    Streamlit web interface, and Power BI dashboards.
+                </p>
+            </div>
+        </div>
+
+        <!-- Weather Prediction -->
+        <div class="project">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230609172210/weather-prediction-using-machine-learning.png">
+            <div>
+                <h3>Weather Prediction System</h3>
+                <p>
+                    Machine learning-based weather forecasting system using
+                    historical climate data to predict temperature and rainfall.
+                </p>
+            </div>
+        </div>
+
+        <!-- Stock Market Prediction -->
         <div class="project">
             <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2021/07/21894download.jpg">
             <div>
                 <h3>Stock Market Prediction</h3>
-                <p>ML models with interactive dashboards for trend prediction.</p>
+                <p>
+                    Predictive analytics using ML models with interactive
+                    Power BI dashboards for trend analysis.
+                </p>
             </div>
         </div>
+
+        <!-- House Price Prediction -->
         <div class="project">
             <img src="https://user-images.githubusercontent.com/109805535/211363137-5b40a5c5-480b-418c-adfc-7ded17fc4f98.png">
             <div>
                 <h3>House Price Prediction</h3>
-                <p>Regression-based accurate property value forecasting.</p>
+                <p>
+                    Regression-based machine learning model to accurately
+                    forecast real estate prices.
+                </p>
             </div>
         </div>
+
+        <!-- Loan Approval -->
         <div class="project">
             <img src="https://i.ytimg.com/vi/s4pUqZrDOzw/maxresdefault.jpg">
             <div>
-                <h3>Loan Approval System</h3>
-                <p>Streamlit app using Logistic Regression.</p>
+                <h3>Loan Approval Prediction</h3>
+                <p>
+                    Streamlit-based web application using Logistic Regression
+                    to predict loan approval outcomes.
+                </p>
             </div>
         </div>
+
     </div>
 </section>
-
-<section id="experience" class="reveal">
-    <h2>Experience</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <h3>Data Science Intern – Gradtwin</h3>
-            <p>Worked on ML models, Power BI dashboards, and data preprocessing.</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Data Analytics Intern – Approtech&D</h3>
-            <p>Hands-on experience with Excel, Python, HTML, and Power BI.</p>
-        </div>
-    </div>
-</section>
-
-<section class="reveal">
-    <h2>Education</h2>
-    <div class="edu-card">
-        <h3>Saveetha University</h3>
-        <p>BCA – Computer Science</p>
-        <p>2023 – 2026</p>
-        <p>CGPA: 9.29</p>
-    </div>
-</section>
-
-<section id="contact" class="reveal contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sujaravichandran006@gmail.com">sujaravichandran006@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/suja-d-r-b25023299" target="_blank">View Profile</a></p>
-    <p>GitHub: <a href="https://github.com/suja-dr" target="_blank">github.com/suja-dr</a></p>
-    <p>Location: Chennai, India</p>
-    <a href="DRSuja_Resume.pdf" class="btn" download>Download Resume</a>
-</section>
-
-<footer>
-    <p>© 2025 Suja D R | Data Analytics Portfolio</p>
-</footer>
-
-<script>
-const reveals = document.querySelectorAll(".reveal");
-window.addEventListener("scroll",()=>{
-    reveals.forEach(r=>{
-        const top = r.getBoundingClientRect().top;
-        if(top < window.innerHeight - 100){
-            r.classList.add("active");
-        }
-    });
-});
-</script>
-
-</body>
-</html>
