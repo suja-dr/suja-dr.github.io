@@ -131,21 +131,33 @@ section h2{
 
 /* CONTACT */
 .contact-section{
+    min-height:80vh;
     background:linear-gradient(135deg,#020617,#0f172a);
-    padding:100px 8%;
-}
-.contact-section h2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    font-size:2.5rem;
-    margin-bottom:40px;
 }
+.contact-section{
+    min-height:80vh;
+    background:linear-gradient(135deg,#020617,#0f172a);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;  
+    align-items:center;      
+}
+
 .contact-card{
     max-width:500px;
+    width:100%;
+    margin:0 auto;             
     border:1px solid #22c55e;
     background:rgba(34,197,94,0.08);
     padding:35px;
     border-radius:20px;
     box-shadow:0 0 30px rgba(34,197,94,0.3);
+    text-align:center;
 }
 .contact-card span{
     color:#22c55e;
@@ -221,15 +233,18 @@ machine learning, visualization, and predictive systems.
 </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
 <h2>Projects</h2>
 <div class="projects">
 
 <div class="project">
-<img src="https://tse4.mm.bing.net/th/id/OIP.rRSnMyQXlhmQbx_KTyISHgHaEK">
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*9G4mWZ9uZyY5Z0s5aXoaZQ.png">
 <div>
 <h3>HealthLens AI – Disease Prediction</h3>
-<p>AI-based disease prediction using ML, Streamlit, Power BI.</p>
+<p>
+AI-driven healthcare system predicting diseases from symptoms using ML.
+Includes preprocessing, model training, Streamlit app, and Power BI dashboards.
+</p>
 </div>
 </div>
 
@@ -237,7 +252,9 @@ machine learning, visualization, and predictive systems.
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230609172210/weather-prediction-using-machine-learning.png">
 <div>
 <h3>Weather Prediction System</h3>
-<p>Machine learning weather forecasting model.</p>
+<p>
+Machine learning-based weather forecasting using historical climate data.
+</p>
 </div>
 </div>
 
@@ -245,7 +262,29 @@ machine learning, visualization, and predictive systems.
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2021/07/21894download.jpg">
 <div>
 <h3>Stock Market Prediction</h3>
-<p>Trend prediction using ML & dashboards.</p>
+<p>
+Predictive analytics with ML models and interactive Power BI dashboards.
+</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://user-images.githubusercontent.com/109805535/211363137-5b40a5c5-480b-418c-adfc-7ded17fc4f98.png">
+<div>
+<h3>House Price Prediction</h3>
+<p>
+Regression-based ML model to forecast real estate prices accurately.
+</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://i.ytimg.com/vi/s4pUqZrDOzw/maxresdefault.jpg">
+<div>
+<h3>Loan Approval Prediction</h3>
+<p>
+Streamlit web app using Logistic Regression to predict loan approval.
+</p>
 </div>
 </div>
 
@@ -292,3 +331,4 @@ machine learning, visualization, and predictive systems.
 
 </body>
 </html>
+
